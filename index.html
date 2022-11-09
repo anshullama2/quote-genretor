@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quote Generater</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <button id = "btn" type="button">Generate Quote</button>
+            <h3 id = "quote">Hello thisis dummo of quote Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique, nam ab? Reiciendis laborum doloremque exercitationem quod quisquam, molestiique,tur eius earum eveniet. Iure nobis similique accusamus assumenda.</h3>
+            <p id = "authore">Jeet Veer </p>
+        </div>
+    </div>
+
+    <script>
+        var btn = document.querySelector("#btn");
+        var quote = document.querySelector("#quote");
+        var authore = document.querySelector("#authore");
+        var str_1 = "Life is like a landscape. You live in the midst of it but can describe it only from the vantage point of distance.";
+        var aut_1 = "Charles Lindbergh";
+        var str_2 = "rem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur sint iste optio placeat dolor labore, reprehenderit ips ";
+        var aut_2 = "Claude Louis Hector De Villars";
+        var str_3 = "Life is too short and sweet to be spent by cribbing and complaining about things. Here are some random quotes about the most wonderful gift that we've got ";
+        var aut_3 = "David Thoreau";
+        var str_4 = "A critic is someone who never actually goes to the battle, yet who afterwards comes out shooting the wounded. ";
+        var aut_4 = "Charles Lindbergh";
+
+        var a=1;
+
+        btn.onclick = generater;     
+
+        function generater(){
+            a++;
+            if(a==1){
+                quote.innerText = str_1;
+                authore.innerText = aut_1;
+            }
+            else if(a==2){
+                quote.innerText = str_2;
+                authore.innerText = aut_2;
+            }
+            else if(a==3){
+                quote.innerText = str_3;
+                authore.innerText = aut_3;
+            }
+            else if(a==4){
+                quote.innerText = str_4;
+                authore.innerText = aut_4;
+            }
+            else {
+                a=1;
+            }
+        }
+
+        
+        
+    </script>
+</body>
+</html>
